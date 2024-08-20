@@ -1,7 +1,7 @@
 import RelatedPost from "@/components/Cards/RelatedPost";
 import SharePost from "@/components/Cards/SharePost";
 import TagButton from "@/components/Cards/TagButton";
-import NewsLatterBox from "@/components/Contact/NewsLatterBox";
+import NewsLetterBox from "@/components/Contact/NewsLetterBox";
 import Image from "next/image";
 
 import { Metadata } from "next";
@@ -459,7 +459,7 @@ const BlogSidebarPage = () => {
                 </div>
               </div>
 
-              <NewsLatterBox />
+              <NewsLetterBox />
             </div>
           </div>
         </div>

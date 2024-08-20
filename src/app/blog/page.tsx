@@ -1,5 +1,5 @@
-import SingleCard from "@/components/Blog/SingleBlog";
-import cardData from "@/components/Blog/cardData";
+import SingleCard from "@/components/Cards/SingleCard";
+import cardData from "@/components/Cards/cardData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
@@ -26,7 +26,7 @@ const Blog = () => {
                 key={blog.id}
                 className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
               >
-                <SingleCard blog={blog} />
+                <SingleCard card={blog} />
               </div>
             ))}
           </div>

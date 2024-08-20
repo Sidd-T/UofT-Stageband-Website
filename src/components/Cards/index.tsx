@@ -1,5 +1,5 @@
 import SectionTitle from "../Common/SectionTitle";
-import SingleCard from "./SingleBlog";
+import SingleCard from "./SingleCard";
 import cardData from "./cardData";
 
 const Cards = () => {

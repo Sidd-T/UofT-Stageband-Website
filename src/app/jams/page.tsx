@@ -1,4 +1,4 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
+import AboutJams from "@/components/About/AboutJams";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,10 +10,13 @@ export const metadata: Metadata = {
 const JamsPage = () => {
   return (
     <>
-      <AboutSectionOne
+      <AboutJams
         title="Student Jams"
         subtitle="Weekly Jam Sessions for Students and Alumni"
-        paragraph="Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap "
+        paragraphs={[
+          "Currently we host our Jams on Thursdays at 6:30PM",
+          "Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap",
+        ]}
       />
     </>
   );

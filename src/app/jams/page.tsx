@@ -1,4 +1,4 @@
-import AboutJams from "@/components/About/AboutJams";
+import AboutBand from "@/components/About/AboutBand";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,15 +8,19 @@ export const metadata: Metadata = {
 };
 
 const JamsPage = () => {
+
+  const paragraph = <p>
+  Write music eat soap Write music eat soap Write music eat soap Write music eat soap <br></br>Write music eat soap Write music eat soap Write music eat soap Write music eat soap
+  </p>
+
   return (
     <>
-      <AboutJams
+      <AboutBand
         title="Student Jams"
         subtitle="Weekly Jam Sessions for Students and Alumni"
-        paragraphs={[
-          "Currently we host our Jams on Thursdays at 6:30PM",
-          "Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap",
-        ]}
+        paragraph={paragraph}
+        imgpath="/images/_gold/gold-1.jpg"
+        imgalt="Skule Stageband Gold at the EngSci Dinner Dance, 2023"
       />
     </>
   );

@@ -1,4 +1,4 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
+import AboutBand from "@/components/About/AboutBand";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,12 +8,19 @@ export const metadata: Metadata = {
 };
 
 const BluePage = () => {
+
+  const paragraph = <p>
+  Write music eat soap Write music eat soap Write music eat soap Write music eat soap <br></br>Write music eat soap Write music eat soap Write music eat soap Write music eat soap
+  </p>
+
   return (
     <>
-      <AboutSectionOne
+      <AboutBand
         title="Stageband Blue"
         subtitle="Jazz Combo, 6-7 Members"
-        paragraph="Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap Write music eat soap "
+        paragraph={paragraph}
+        imgpath="/images/_gold/gold-1.jpg"
+        imgalt="Skule Stageband Gold at the EngSci Dinner Dance, 2023"
       />
     </>
   );

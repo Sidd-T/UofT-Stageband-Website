@@ -16,9 +16,15 @@ const SignupPage = () => {
   const auditionsOpen:boolean = true;
 
   const title:string = (auditionsOpen) ? "Auditions are Open! View Info Below" : "Auditions are Closed, Check out Jams";
-  const subtitle:string = (auditionsOpen) ? "Click on the button below to go to our Google Form" : "Jams are run weekly and are available for all students. More info on the jams page";
-  const buttonText:string = (auditionsOpen) ? "Audition Form" : "Jams Info";
-  const buttonLink:string = (auditionsOpen) ? "google form link here" : "/jams";
+  const subtitle:string = (auditionsOpen) ? "" : "Jams are run weekly and are available for all students. More info on the jams page";
+  // const buttonText:string = (auditionsOpen) ? "Audition Form" : "Jams Info";
+  // const buttonLink:string = (auditionsOpen) ? "google form link here" : "/jams";
+
+  const paragraph = <p>
+  We are currently holding auditions for Stageband 2024-2025! <br></br><br></br>
+  They are scheduled on September 7th and 11th, from 6:00 pm to 8:00 pm. The auditions are walk-in on the day, no need to prepare. <br></br><br></br>
+  All instruments are welcome to try out, and there is an option for an online audition as well if the dates above don't work.
+  </p>
 
   return (
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
@@ -31,18 +37,18 @@ const SignupPage = () => {
                 paragraph={subtitle}
                 mb="44px"
               />
-              <p className="mb-10 text-2xl font-semi-bold !leading-tight text-black dark:text-white sm:text-xl md:text-2xl">
+              <div className="text-2xl font-semi-bold !leading-tight text-black dark:text-white sm:text-xl md:text-2xl">
                 {(auditionsOpen)
-                ? "We are currently holding auditions for Stageband 2024-2025! They are scheduled on September 7th and 11th, from 6:00 pm to 8:00 pm. All instruments are welcome to try out, and there is an option for an online audition as well if the dates above don't work."
-                : ""}
-              </p>
-              <div className="w-full mt-20 md:mt-20 sm:mt-0">
+                ? paragraph
+                : <></>}
+              </div>
+              {/* <div className="w-full mt-20 md:mt-20 sm:mt-0">
                 <Link href={buttonLink}>
                   <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
                     {buttonText}
                   </button>
                 </Link>
-              </div>
+              </div> */}
             </div>
 
             <div className="w-full px-4 sm:pt-10 lg:w-1/2">

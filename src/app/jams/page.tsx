@@ -10,7 +10,8 @@ export const metadata: Metadata = {
 const JamsPage = () => {
 
   const paragraph = <p>
-  Write music eat soap Write music eat soap Write music eat soap Write music eat soap <br></br>Write music eat soap Write music eat soap Write music eat soap Write music eat soap
+  <i>Jams</i> are weekly* run jam sessions open to all students at the University, regardless of Faculty. <br></br>
+  Jams are a great way to meet other musicians, develop your skills, and have fun playing music. <br></br>
   </p>
 
   return (
@@ -19,7 +20,7 @@ const JamsPage = () => {
         title="Student Jams"
         subtitle="Weekly Jam Sessions for Students and Alumni"
         paragraph={paragraph}
-        imgpath="/images/_gold/gold-1.jpg"
+        imgpath="/images/_jams/jams-1.gif"
         imgalt="Skule Stageband Gold at the EngSci Dinner Dance, 2023"
       />
     </>

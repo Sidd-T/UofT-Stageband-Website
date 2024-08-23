@@ -30,7 +30,7 @@ const cardData: Card[] = [
     title: "Jams",
     paragraph:
       "Open to all skill levels, student jams are run weekly and are the perfect way to have fun and improve at the same time.",
-    image: "/images/_jams/jams-1.gif",
+    image: "/images/_jams/jams-1.png",
     link: "/jams",
   },
 ];

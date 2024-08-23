@@ -31,6 +31,18 @@ const menuData: Menu[] = [
     path: "/jams",
     newTab: false,
   },
+  {
+    id: 5,
+    title: "Contact",
+    path: "/contact",
+    newTab: false
+  },
+  {
+    id: 6,
+    title: "Join Us",
+    path: "/signup",
+    newTab: false
+  }
   // For future use, if a submenu is needed, then this is how to do it
   // {
   //   id: 4,

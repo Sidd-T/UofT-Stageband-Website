@@ -2,7 +2,7 @@ import AboutBand from "@/components/About/AboutBand";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Big Band! | Skule Stageband",
+  title: "Gold | Skule Stageband",
   description: "This is About Page for Stageband Gold",
   // other metadata
 };

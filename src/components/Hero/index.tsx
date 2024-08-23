@@ -9,7 +9,7 @@ const Intro = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pb-4 pt-[120px] dark:bg-gray-dark md:pb-[0px] md:pt-[150px] xl:pb-[40px] xl:pt-[180px] 2xl:pb-[50px] 2xl:pt-[210px]"
+        className="relative z-10 overflow-hidden bg-white pb-4 pt-[80px] dark:bg-gray-dark md:pb-[0px] md:pt-[100px] xl:pb-[40px] xl:pt-[120px] 2xl:pb-[50px] 2xl:pt-[150px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">

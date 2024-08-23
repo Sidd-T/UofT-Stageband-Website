@@ -1,6 +1,10 @@
 import Link from "next/link";
 
 const Intro = () => {
+
+  const currYear = new Date().getFullYear();
+  const stagebandAge = currYear - 1984;
+
   return (
     <>
       <section
@@ -15,9 +19,10 @@ const Intro = () => {
                   SKULE STAGEBAND
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                The student run Skule™ Stage Band has been playing to great acclaim at Skule™ events for over 35 years. 
+                {`The student run Skule™ Stage Band has been playing to great acclaim at Skule™ events for over ${stagebandAge} years. 
                 These include the most celebrated dances of the year (Cannonball and Gradball) as well as Suds, the EngSci Dinner Dance, 
-                and our very own gigs at Hart House and other local establishments. 
+                and our very own gigs at Hart House and other local establishments.`} 
+                <br></br><br></br>
                 The Stage Band was established in 1983 by engineering students with help from Mr. Malcolm McGrath of the Skule Alumni Association. 
                 It is now the longest running Skule™ Music ensemble, welcoming anybody at U of T who enjoys playing and performing swing, big band, funk, latin, and other genres of jazz music.
                 </p>

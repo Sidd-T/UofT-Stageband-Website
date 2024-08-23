@@ -5,53 +5,39 @@ const eventsData: Event[] = [
     id: 1,
     dateText: "Sept 7th, 2024 | 6:00 - 8:00 pm",
     date: new Date(2024, 8, 7, 18, 0),
-    title: "Open Audition 1",
+    title: "Open Audition 1 - Myhal 041 (Basement)",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Stageband is holding an open audition, which means no need to prep, just walk in on the day and jam out with the execs, alumni, and other auditionees!",
   },
   {
     id: 2,
     dateText: "Sept 11th, 2024 | 6:00 - 8:00 pm",
     date: new Date(2024, 8, 11, 18, 0),
-    title: "Open Audition 2",
+    title: "Open Audition 2 - Myhal 041 (Basement)",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Stageband is holding an open audition, which means no need to prep, just walk in on the day and jam out with the execs, alumni, and other auditionees!",
   },
   {
     id: 3,
     dateText: "Sept 14th, 2024 | 3:30 - 4:30 pm",
     date: new Date(2024, 8, 14, 15, 30),
-    title: "ECC Edge Conference Performance - Combo",
+    title: "ECC Edge Conference - Myhal Foyer - Combo",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "The Skule Combo is performing a 1 hour set at the ECC Conference, with a new roster and new songs, come out to have a listen to Combo's first performance of the year!",
   },
   {
     id: 4,
-    dateText: "June 14th, 2024 | 3:30 - 4:30 pm",
-    date: new Date(2024, 5, 14, 15, 30),
-    title: "test",
+    dateText: "August 26th, 2024 | 9:30 - 10:00 am",
+    date: new Date(2024, 7, 22, 9, 30),
+    title: "Matriculation - Convocation Hall",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
-  },
-  {
-    id: 4,
-    dateText: "May 14th, 2024 | 3:30 - 4:30 pm",
-    date: new Date(2024, 4, 14, 15, 30),
-    title: "test",
-    paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "While new students are settling into the hall, members from Stageband will be playing a 30 minute set to kick off matriculation.",
   },
   // {
-  //   id: 1,
-  //   date: "Sept 7th, 2024",
-  //   title: "Open Audition 1",
-  //   paragraph:
-  //     "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
-  // },
-  // {
-  //   id: 1,
-  //   date: "Sept 7th, 2024",
-  //   title: "Open Audition 1",
+  //   id: 4,
+  //   dateText: "May 14th, 2024 | 3:30 - 4:30 pm",
+  //   date: new Date(2024, 4, 14, 15, 30),
+  //   title: "test",
   //   paragraph:
   //     "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
   // },

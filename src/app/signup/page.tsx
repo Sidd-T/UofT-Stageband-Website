@@ -23,7 +23,7 @@ const SignupPage = () => {
   const paragraph = <p>
   We are currently holding auditions for Stageband 2024-2025! <br></br><br></br>
   They are scheduled on September 7th and 11th, from 6:00 pm to 8:00 pm. The auditions are walk-in on the day, no need to prepare. <br></br><br></br>
-  All instruments are welcome to try out, and there is an option for an online audition as well if the dates above don't work.
+  All instruments are welcome to try out, and there is an option for an online audition as well if the dates above don't work, but keep in mind people who come in person will be prioritsed for equal skill levels.
   </p>
 
   return (
@@ -42,13 +42,11 @@ const SignupPage = () => {
                 ? paragraph
                 : <></>}
               </div>
-              {/* <div className="w-full mt-20 md:mt-20 sm:mt-0">
-                <Link href={buttonLink}>
-                  <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
-                    {buttonText}
-                  </button>
+              <div className="text-primary w-full mt-10 md:mt-10 sm:mt-5">
+                <Link href={""}>
+                  <u>Online Audition Instructions</u>
                 </Link>
-              </div> */}
+              </div>
             </div>
 
             <div className="w-full px-4 sm:pt-10 lg:w-1/2">

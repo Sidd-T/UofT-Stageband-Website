@@ -3,34 +3,34 @@ import { Card } from "@/types/card";
 const cardData: Card[] = [
   {
     id: 1,
-    title: "Stageband Blue",
+    title: "Stageband Gold",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-01.jpg",
-    link: "/blue",
+      `A big band celebrating ${(new Date().getFullYear() - 1984)} of musical history, Stageband Gold is longest running musical ensemble at Skule.`,
+    image: "/images/_gold/gold-2.jpg",
+    link: "/gold",
   },
   {
     id: 2,
-    title: "Stageband Gold",
+    title: "Stageband Blue",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-02.jpg",
-    link: "/gold",
+      "A smaller musical group focusing on improvisation, Stageband Blue is a great place for musicians to grow their skills.",
+    image: "/images/_blue/blue-1.jpg",
+    link: "/blue",
   },
   {
     id: 3,
     title: "Stageband Combo",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-03.jpg",
+      "Stageband Combo is a small group made up of experienced musicians with a passion for jazz and improvisation.",
+    image: "/images/_combo/combo-2.jpg",
     link: "/combo",
   },
   {
     id: 4,
     title: "Jams",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-03.jpg",
+      "Open to all skill levels, student jams are run weekly and are the perfect way to have fun and improve at the same time.",
+    image: "/images/_jams/jams-1.gif",
     link: "/jams",
   },
 ];

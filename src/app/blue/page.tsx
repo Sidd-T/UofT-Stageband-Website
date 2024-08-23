@@ -10,16 +10,19 @@ export const metadata: Metadata = {
 const BluePage = () => {
 
   const paragraph = <p>
-  Write music eat soap Write music eat soap Write music eat soap Write music eat soap <br></br>Write music eat soap Write music eat soap Write music eat soap Write music eat soap
+  Stageband blue is a small to medium sized ensemble within stageband that is focused on improvisation. <br></br><br></br>
+  With around 6-8 players, the band performs songs from The Real Book, as well as songs picked and arranged by the members of the band. <br></br><br></br>
+  The band is a great learning environment and is one of the best ways for musicians new to jazz to start improvising and playing jazz.
+
   </p>
 
   return (
     <>
       <AboutBand
         title="Stageband Blue"
-        subtitle="Jazz Combo, 6-7 Members"
+        subtitle="Jazz Combo, 6-8 Members"
         paragraph={paragraph}
-        imgpath="/images/_gold/gold-1.jpg"
+        imgpath="/images/_blue/blue-4.jpg"
         imgalt="Skule Stageband Gold at the EngSci Dinner Dance, 2023"
       />
     </>

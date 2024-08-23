@@ -30,16 +30,7 @@ const Contact = () => {
                   For anything related to Stageband Combo, like questions or booking gigs.
                 </p>
               </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-primary dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  <Link href={"https://music.skule.ca/"}>
-                    <u>Skule Music Parent Site</u>
-                  </Link>    
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  The parent group for all music groups within Skule, has contacts listed for other groups.
-                </p>
-              </div>
+              
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
@@ -65,13 +56,23 @@ const Contact = () => {
                 </p>
               </div>
               <div className="mb-1">
+                <h3 className="mb-4 text-xl font-bold text-primary dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                  <Link href={"https://music.skule.ca/"}>
+                    <u>Skule Music Parent Site</u>
+                  </Link>    
+                </h3>
+                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                  The parent group for all music groups within Skule, has contacts listed for other groups.
+                </p>
+              </div>
+              {/* <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   sidd.topiwala02@gmail.com
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  For any inquires specifically about this website, or any suggestions of any possible improvents or additions.
+                  For any inquires specifically about this website, or any suggestions of any possible improvements or additions.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

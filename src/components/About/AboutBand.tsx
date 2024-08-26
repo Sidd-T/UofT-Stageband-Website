@@ -1,6 +1,5 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
-import { JSXElementConstructor } from "react";
 
 const AboutBand = ({
   title,
@@ -8,12 +7,14 @@ const AboutBand = ({
   paragraph,
   imgpath,
   imgalt,
+  videoTitle,
 }: {
   title: string;
   subtitle: string;
   paragraph: JSX.Element;
   imgpath: string;
   imgalt: string;
+  videoTitle?: string;
 }) => {
   return (
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
@@ -33,12 +34,23 @@ const AboutBand = ({
 
             <div className="w-full px-4 lg:w-1/2">
               <div className="relative mx-auto aspect-[1024/683] lg:mr-0 object-scale-down">
+                {(videoTitle) ?          
+                <iframe
+                    id="iframe1"
+                    className="mx-auto drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
+                    src={imgpath}
+                    title={videoTitle}
+                    aria-hidden="true"
+                    width={"100%"}
+                    height={"100%"}
+                />
+                :
                 <Image
                   src={imgpath}
                   alt={imgalt}
                   fill
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
+                />}
               </div>
             </div>
           </div>

@@ -23,8 +23,9 @@ const JamsPage = () => {
         title="Student Jams"
         subtitle="Weekly Jam Sessions for Students and Alumni"
         paragraph={paragraph}
-        imgpath="/images/_jams/jams-1.gif"
+        imgpath="https://youtube.com/embed/1lPeohBeqC0"
         imgalt="Skule Stageband Gold at the EngSci Dinner Dance, 2023"
+        videoTitle="Student Jams - Strasbourg St. Denis"
       />
     </>
   );

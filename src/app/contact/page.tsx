@@ -4,7 +4,7 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Page",
+  title: "Contact | Skule Stageband",
   description: "This is Contact Page for Skule Stageband",
   // other metadata
 };

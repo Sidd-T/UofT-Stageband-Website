@@ -1,9 +1,6 @@
 "use client";
 
-import { useTheme } from "next-themes";
-
 const NewsLetterBox = () => {
-  const { theme } = useTheme();
 
   return (
     <div className="relative z-10 rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11">

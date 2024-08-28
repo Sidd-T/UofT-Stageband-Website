@@ -11,7 +11,7 @@ const NewsLetterBox = () => {
         Consider joining the Stageband mailing list
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        We'll provide updates on the band and any events that are happening
+        We&apos;ll provide updates on the band and any events that are happening
       </p>
       <div>
         <input

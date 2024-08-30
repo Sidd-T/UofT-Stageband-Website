@@ -23,11 +23,13 @@ const NewsLetterBox = () => {
           placeholder="Enter your email"
           className="border-stroke mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
         />
-        <input
-          type="submit"
-          value="Currently Under Construction"
-          className="mb-5 flex w-full cursor-pointer items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
-        />
+        <a target="_blank" href={"https://docs.google.com/forms/d/e/1FAIpQLSe3ddn52csM892-ytxV1uDBDiGiZF52nup8l0tibJLLU-NqKA/viewform?usp=sf_link"}>
+          <input
+            type="submit"
+            value="Currently under construction, click here to go to a Google form instead"
+            className="mb-5 text-wrap flex w-full cursor-pointer items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
+          />
+        </a>
       </div>
     </div>
   );

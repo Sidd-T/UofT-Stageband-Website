@@ -12,7 +12,7 @@ const BluePage = () => {
   const paragraph = <p>
   Stageband blue is a small to medium sized ensemble within stageband that is focused on improvisation. <br></br><br></br>
   With around 6-8 players, the band performs songs from The Real Book, as well as songs picked and arranged by the members of the band. <br></br><br></br>
-  The band is a great learning environment and is one of the best ways for musicians new to jazz to start improvising and playing jazz.
+  The band performs at many events through the year like SUDS and nocturne, and explores many different styles of music.
 
   </p>
 

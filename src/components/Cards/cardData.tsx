@@ -13,7 +13,7 @@ const cardData: Card[] = [
     id: 2,
     title: "Stageband Blue",
     paragraph:
-      "A smaller musical group focusing on improvisation, Stageband Blue is a great place for musicians to grow their skills.",
+      "A smaller musical group focusing on improvisation, Stageband Blue explores a wide range of music from all styles.",
     image: "/images/_blue/blue-1.jpg",
     link: "/blue",
   },

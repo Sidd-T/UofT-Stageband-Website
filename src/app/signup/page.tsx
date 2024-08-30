@@ -23,7 +23,8 @@ const SignupPage = () => {
   const paragraph = <p>
   We are currently holding auditions for Stageband 2024-2025! <br></br><br></br>
   They are scheduled on September 7th and 11th, from 6:00 pm to 8:00 pm. The auditions are walk-in on the day, no need to prepare. <br></br><br></br>
-  All instruments are welcome to try out, and there is an option for an online audition as well if the dates above don&apos;t work, but keep in mind people who come in person will be prioritsed for equal skill levels.
+  All instruments are welcome to try out, and there is an option for an online audition as well if the dates above don&apos;t work, 
+  but keep in mind people who come in person will be prioritised for equal skill levels.
   </p>
 
   return (

@@ -3,7 +3,7 @@ import { Event } from "@/types/event";
 const eventsData: Event[] = [
   {
     id: 1,
-    dateText: "Sept 7th, 2024 | 6:00 - 8:00 pm",
+    dateText: "Sept 7th 2024, 6:00 - 8:00 pm",
     date: new Date(2024, 8, 7, 18, 0),
     title: "Open Audition 1 - Myhal 041 (Basement)",
     paragraph:
@@ -11,7 +11,7 @@ const eventsData: Event[] = [
   },
   {
     id: 2,
-    dateText: "Sept 11th, 2024 | 6:00 - 8:00 pm",
+    dateText: "Sept 11th 2024, 6:00 - 8:00 pm",
     date: new Date(2024, 8, 11, 18, 0),
     title: "Open Audition 2 - Myhal 041 (Basement)",
     paragraph:
@@ -19,7 +19,7 @@ const eventsData: Event[] = [
   },
   {
     id: 3,
-    dateText: "Sept 14th, 2024 | 3:30 - 4:30 pm",
+    dateText: "Sept 14th 2024, 3:30 - 4:30 pm",
     date: new Date(2024, 8, 14, 15, 30),
     title: "ECC Edge Conference - Myhal Foyer - Combo",
     paragraph:
@@ -27,8 +27,8 @@ const eventsData: Event[] = [
   },
   {
     id: 4,
-    dateText: "August 26th, 2024 | 9:30 - 10:00 am",
-    date: new Date(2024, 7, 22, 9, 30),
+    dateText: "Aug 26th 2024, 8:30 - 9:00 am",
+    date: new Date(2024, 7, 22, 8, 30),
     title: "Matriculation - Convocation Hall",
     paragraph:
       "While new students are settling into the hall, members from Stageband will be playing a 30 minute set to kick off matriculation.",

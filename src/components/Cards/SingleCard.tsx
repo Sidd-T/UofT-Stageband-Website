@@ -6,7 +6,7 @@ const SingleCard = ({ card }: { card: Card }) => {
   const { title, image, paragraph, link } = card;
   return (
     <>
-      <div className="group relative overflow-hidden border rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
+      <div className="h-full group relative overflow-hidden border rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
         <Link
           href={link}
           className="relative block aspect-[37/22] w-full"

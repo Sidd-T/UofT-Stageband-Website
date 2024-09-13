@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -12,23 +10,17 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Template by{" "}
+              This website was designed by your fellow engineers.
+              <br></br>
+            </p>
+            <p className="text-center text-base text-body-color">
               <a
-                href="http://uideck.com"
+                href="https://github.com/Sidd-T/UofT-Stageband-Website/issues"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary"
+                className="text-primary hover:underline"
               >
-                UIdeck
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://nextjstemplates.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Next.js Templates
+                Found an issue with the site?
               </a>
             </p>
           </div>

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const SignupPage = () => {
 
-  const auditionsOpen:boolean = true;
+  const auditionsOpen:boolean = false;
 
   const title:string = (auditionsOpen) ? "Auditions are Open! View Info Below" : "Auditions are Closed, Check out Jams";
   const subtitle:string = (auditionsOpen) ? "" : "Jams are run weekly and are available for all students. More info on the jams page";

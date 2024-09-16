@@ -1,6 +1,6 @@
 import SectionTitle from "../Common/SectionTitle";
 import SingleEvent from "./SingleEvent";
-import eventsData from "./eventsData";
+import prisma from "@/lib/prisma";
 
 const Events = ({
   title,
@@ -14,10 +14,12 @@ const Events = ({
    * Gets either the upcoming or past events based on isFuture prop, then sorts appropriately
    * @returns List of JSX elements of Events
    */
-  function getEvents() {
+  async function getEvents() {
     const today = new Date();
 
-    const events = eventsData.filter((event) => {
+    const rows = await prisma.event.findMany();
+
+    const events = rows.filter((event) => {
       return ((isFuture) ? event.date > today : event.date < today);
     })
 

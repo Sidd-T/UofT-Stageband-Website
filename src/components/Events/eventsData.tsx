@@ -1,6 +1,6 @@
 import { Event } from "@/types/event";
 
-const eventsData: Event[] = [
+const eventsData: any[] = [
   {
     id: 1,
     dateText: "Sept 7th 2024, 6:00 - 8:00 pm",

@@ -1,7 +1,7 @@
 import { Event } from "@/types/event";
 
 const SingleEvent = ({ event: event }: { event: Event }) => {
-  const { dateText, title, paragraph } = event;
+  const { dateText, title, content } = event;
   return (
     <div className="w-full border">
       <div className="wow fadeInUp m-5" data-wow-delay=".15s">
@@ -18,7 +18,7 @@ const SingleEvent = ({ event: event }: { event: Event }) => {
         </div>
         
         <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color">
-          {paragraph}
+          {content}
         </p>
       </div>
     </div>

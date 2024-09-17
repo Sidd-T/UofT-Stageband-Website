@@ -43,11 +43,15 @@ const SignupPage = () => {
                 ? paragraph
                 : <></>}
               </div>
-              <div className="text-primary w-full mt-10 md:mt-10 sm:mt-5">
-                <Link href="https://docs.google.com/document/d/133GsnP1_4-UNJO3gEfhbgD2KMvlPH39w5inMHi3XMFA/edit?usp=sharing" target="_blank">
-                  <u>Online Audition Instructions</u>
-                </Link>
+              {<div className="text-primary w-full mt-10 md:mt-10 sm:mt-5">
+                {(auditionsOpen)
+                ? <Link href="https://docs.google.com/document/d/133GsnP1_4-UNJO3gEfhbgD2KMvlPH39w5inMHi3XMFA/edit?usp=sharing" target="_blank">
+                    <u>Online Audition Instructions</u>
+                  </Link>
+                : <></>
+                }
               </div>
+              }
             </div>
 
             <div className="w-full px-4 sm:pt-10 lg:w-1/2">

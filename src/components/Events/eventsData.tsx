@@ -33,6 +33,15 @@ const eventsData: Event[] = [
     paragraph:
       "While new students are settling into the hall, members from Stageband will be playing a 30 minute set to kick off matriculation.",
   },
+  {
+    id: 5,
+    dateText: "Oct 8th 2024, 6:00 - 6:45 pm",
+    date: new Date(2024, 9, 8, 18, 30),
+    title: "Dean and Major Donor Reception - Combo",
+    paragraph:
+      "Skule combo is playing for the Dean and major donors at the Office of Advancements Reception."
+  },
+
   // {
   //   id: 4,
   //   dateText: "May 14th, 2024 | 3:30 - 4:30 pm",

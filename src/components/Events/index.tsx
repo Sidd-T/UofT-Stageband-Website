@@ -51,7 +51,7 @@ const Events = async ({
           center
           mb="50"
         />
-        <div className="overflow-y-auto max-h-[calc(300px)] scrollbar-hidden bg-lightgrey shadow-one rounded-lg">
+        <div className="overflow-y-auto max-h-72 scrollbar-hidden bg-lightgrey shadow-one rounded-lg">
           <div className="grid grid-cols-1 gap-x-8 gap-y-2 md:grid-cols-2 lg:grid-cols-1">
             {events.map((event: Event) => (
               <SingleEvent

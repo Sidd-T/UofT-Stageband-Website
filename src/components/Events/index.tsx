@@ -1,8 +1,38 @@
+'use server'
+
 import SectionTitle from "../Common/SectionTitle";
 import SingleEvent from "./SingleEvent";
-import eventsData from "./eventsData";
+import { queryDB } from "@/app/actions";
+import { Event } from "@/types/event";
+import '../../styles/events.css'
 
-const Events = ({
+async function fetchEvents(isFuture:boolean) {
+
+  let whereClause = '';
+  let orderByClause = '';
+
+  if (isFuture) {
+    whereClause += `p.date >= CURRENT_DATE`; // Future events
+    orderByClause += `ORDER BY p.date ASC`; // Future events, closest to current date first
+  } else {
+    whereClause += `p.date < CURRENT_DATE`; // Past events
+    orderByClause += `ORDER BY p.date DESC`; // Past events, most recent first
+  }
+
+  // Build the full query with placeholders
+  const query = `SELECT p.* FROM events p WHERE ${whereClause} ${orderByClause}`;
+
+  try {
+    const events:any[] = await queryDB(query);
+    return events;
+  } 
+  catch (err: unknown) {
+    console.error(err);
+    return []
+  }
+}
+
+const Events = async ({
   title,
   isFuture
 }: {
@@ -10,48 +40,31 @@ const Events = ({
   isFuture: boolean;
 }) => {
 
-  /**
-   * Gets either the upcoming or past events based on isFuture prop, then sorts appropriately
-   * @returns List of JSX elements of Events
-   */
-  function getEvents() {
-    const today = new Date();
-
-    const events = eventsData.filter((event) => {
-      return ((isFuture) ? event.date > today : event.date < today);
-    })
-
-    events.sort((a, b) => {
-      return ((isFuture) ? (a.date.getTime() - b.date.getTime()) : (b.date.getTime() - a.date.getTime()));
-    })
-
-    // we dont want too many past events showing, so just cut to 2
-    if (!isFuture){
-      events.length = 2;
-    }
-
-    return events.map((event) => (
-      <SingleEvent key={event.id} event={event} />
-    ))
-  }
+  const events: any[] = await fetchEvents(isFuture);
 
   return (
-    <>
-      <section id="features" className="pt-6 md:pt-10 lg:pt-16">
-        <div className="container">
-          <SectionTitle
-            title={title}
-            paragraph=""
-            center
-            mb='50'
-          />
-          <div className="grid grid-cols-1 gap-x-8 gap-y-5 md:grid-cols-2 lg:grid-cols-1">
-            {getEvents()}
+    <section id="features" className="pt-6 md:pt-10 lg:pt-16 shadow-one">
+      <div className="container">
+        <SectionTitle
+          title={title}
+          paragraph=""
+          center
+          mb="50"
+        />
+        <div className="overflow-y-auto max-h-[calc(300px)] py-2 scrollbar-hidden bg-lightgrey shadow-one rounded-lg">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-2 md:grid-cols-2 lg:grid-cols-1">
+            {events.map((event: Event) => (
+              <SingleEvent
+                key={event.id}
+                event={event}
+              />
+            ))}
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
 export default Events;
+

@@ -81,7 +81,7 @@ const ImageGallery = ({
               {/* Thumbnail gallery and pagination */}
               <div className="flex flex-col w-full lg:w-2/5 border-body-color px-4 pt-4 pb-6">
                 <p className="italic text-black text-lg py-5 text-center">
-                  {(totalPages > 1) ? `Showing ${currentPageImages.length} out of ${images.length} total images` : `Showing ${images.length - 1} images`}
+                  {(totalPages > 1) ? `Showing images ${((currentPage-1)*itemsPerPage+1)}-${((currentPage-1)*itemsPerPage+currentPageImages.length)} of ${images.length} total images` : `Showing ${images.length} images`}
                 </p>
 
                 {/* Thumbnail grid */}

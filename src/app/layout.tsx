@@ -22,10 +22,12 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className} flex flex-col min-h-screen`}>
         <Providers>
           <Header />
-          {children}
+          <div className="flex-grow">
+            {children}
+          </div>
           <Footer />
           <ScrollToTop />
         </Providers>

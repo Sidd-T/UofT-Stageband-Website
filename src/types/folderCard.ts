@@ -3,5 +3,6 @@ export type FolderCard = {
     image: string;
     year: string;
     band?: string;
+    videos?: string[];
   };
   

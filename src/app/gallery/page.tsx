@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Gallery | Skule Stageband",
-  description: "This is the Gallery Page for Stageband Combo",
+  description: "This is the Gallery Folders Page for Stageband Combo",
   // other metadata
 };
 
@@ -12,7 +12,7 @@ const GalleryHomePage = () => {
     <>
       <FolderCards
         title="Gallery"
-        subtitle="Photos and videos from past Stageband Events"
+        subtitle="Photos and videos from past Stageband events"
       />
     </>
   );

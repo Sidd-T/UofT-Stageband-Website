@@ -1,9 +1,15 @@
 import fs from 'fs';
 import path from 'path';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
-export async function GET(req: Request, { params }: { params: { event: string } }) {
-  const { event } = await params;
+export async function GET(req: NextRequest) {
+  // Extract the 'event' parameter from the URL
+  const event = req.nextUrl.pathname.split('gallery/')[1]
+
+  if (!event) {
+    return NextResponse.json({ message: 'Event not specified' }, { status: 400 });
+  }
+
   const dirPath = path.join(process.cwd(), 'public', 'images', 'gallery', event);
 
   try {

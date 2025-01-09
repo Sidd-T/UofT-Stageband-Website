@@ -29,6 +29,7 @@ const ImageGallery = ({
 
    // Get the images for the current page
    const startIndex = (currentPage - 1) * itemsPerPage;
+   console.log(images);
    const currentPageImages = images.slice(startIndex, startIndex + itemsPerPage);
  
    // Calculate total pages
@@ -71,6 +72,7 @@ const ImageGallery = ({
                     src={`/images/gallery/${title}/${images[selectedIndex]}`}
                     alt={`Image from ${title}`}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 border-8 border-dark cursor-pointer"
                   />
                 </div>
@@ -96,6 +98,7 @@ const ImageGallery = ({
                             alt={`Image ${startIndex + index + 1}`}
                             fill
                             className="cursor-pointer"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           />
                         </div>
                       </div>

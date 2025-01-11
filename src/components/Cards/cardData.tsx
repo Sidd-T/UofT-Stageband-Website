@@ -5,7 +5,7 @@ const cardData: Card[] = [
     id: 1,
     title: "Stageband Gold",
     paragraph:
-      `A big band celebrating ${(new Date().getFullYear() - 1984)} of musical history, Stageband Gold is longest running musical ensemble at Skule.`,
+      `A big band celebrating ${(new Date().getFullYear() - 1984)} years of musical history, Stageband Gold is longest running musical ensemble at Skule.`,
     image: "/images/_gold/gold-2.jpg",
     link: "/gold",
   },

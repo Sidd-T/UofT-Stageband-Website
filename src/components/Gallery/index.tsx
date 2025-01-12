@@ -23,9 +23,9 @@ const FolderCards = ({
             </div>
 
             <div className="container border-body-color py-5">
-                <div className="grid grid-cols-4 gap-x-8 gap-y-10 md:grid-cols-4 md:gap-x-6 lg:gap-x-8 xl:grid-cols-4">
+                <div className="grid grid-cols-1 gap-x-8 gap-y-10 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 md:gap-x-6 lg:gap-x-8 lg-grid-cols-4 xl:grid-cols-4">
                 {folderCardData.map((card, index) => (
-                    <div key={index} className="w-full">
+                    <div key={index} className="w-full min-w-[100px] min-h-[90px] ">
                     <SingleFolderCard card={card} />
                     </div>
                 ))}

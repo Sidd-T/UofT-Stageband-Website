@@ -26,7 +26,7 @@ const GalleryPage = async ({
   const videos: string[] = folderCardWithVideos ? folderCardWithVideos.videos : []; // Get the videos or an empty array if none
 
   return (
-    <div className="px-0 pt-0 sm:px-0 sm:pt-0 md:px-0 md:pt-0 px-0 pt-0xs:px-6 xs:pt-8">
+    <div className="px-6 pt-8 sm:px-0 sm:pt-0 md:px-0 md:pt-0 px-0 pt-0 xs:px-6 xs:pt-8">
       <ImageGallery
         title={title}
         subtitle="Photos"

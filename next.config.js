@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["localhost"],
+    domains: ["localhost", 'img.youtube.com', "jazz.skule.ca"],
     remotePatterns: [
       {
         protocol: "https",

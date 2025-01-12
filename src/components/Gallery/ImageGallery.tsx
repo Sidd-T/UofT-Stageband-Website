@@ -13,6 +13,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/styles.css";
+import Link from "next/link";
 
 const ImageGallery = ({
     title,
@@ -75,13 +76,18 @@ const ImageGallery = ({
         index={selectedIndex}
         on={{ view: ({ index: currentIndex }) => setSelectedIndex(currentIndex) }}
       />
-      <section id="folders" className="pt-16 md:pt-20 lg:pt-28">
+      <section id="folders" className="pt-16 md:pt-20 lg:pt-28 pb-16">
         <div className="container">
-          <div className="pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+          <div className="dark:border-white/[.15]">
             <div className="-mx-4 flex flex-wrap items-center">
-              <div className="w-full lg:w-1/2 mb-6 ">
+              <div className="w-full lg:w-1/2 mb-6">
+                <Link
+                  href={'/gallery'}
+                >
+                  <p className="pb-4 text-sm text-black dark:text-white underline hover:text-primary">{"< Back to gallery"}</p>
+                </Link>
                 <h2 className="text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
-                  {`${title}`}
+                  {`${title.replace(/_/g, ' ')}`}
                 </h2>
                 <p className="text-base !leading-relaxed text-body-color md:text-2xl">
                   {subtitle}

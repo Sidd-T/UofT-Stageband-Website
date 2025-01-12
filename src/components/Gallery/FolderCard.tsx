@@ -12,7 +12,7 @@ const SingleFolderCard = ({ card }: { card: FolderCard }) => {
           href={`/gallery/${title}`}
           className="relative block aspect-[37/22] w-full"
         >
-          <Image src={image} alt="image" fill />
+          <Image src={image} alt="image" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
         </Link>
         <div className="p-2 sm:p-2 md:px-2 md:py-3 lg:p-2 xl:px-3 xl:py-4 2xl:p-4">
           <div className="flex items-center justify-between text-black">
@@ -21,7 +21,7 @@ const SingleFolderCard = ({ card }: { card: FolderCard }) => {
                 href={`/gallery/${title}`}
                 className="block text-xl italic text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-xl"
               >
-                {title}
+                {title.replace(/_/g, ' ')}
               </Link>
             </h3>
             <FolderIcon/>

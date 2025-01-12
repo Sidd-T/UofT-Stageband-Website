@@ -61,7 +61,7 @@ const VideoGallery = ({
                   <div className="relative w-full h-full mx-auto overflow-hidden">
                     <iframe
                         id={`${selectedIndex}`}
-                        className="mx-auto max-w-full min-h-[550px] drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 border-8 border-dark cursor-pointer object-cover"
+                        className="mx-auto max-w-full min-h-[550px] xs:min-h-[250px] drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 border-8 border-dark cursor-pointer object-cover"
                         src={getYouTubeEmbedUrl(videos[selectedIndex])}
                         title={`${title.replace(/_/g, ' ')} - Video ${selectedIndex}`}
                         aria-hidden="true"

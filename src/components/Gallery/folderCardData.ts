@@ -31,15 +31,6 @@ const folderCardData: FolderCard[] = [
     ],
   },
   {
-    title: "Alumni_SUDS_2024",
-    image: "/images/gallery/Alumni_SUDS_2024/IMG_3091.jpg",
-    year: "2024",
-    band: ["Blue", "Gold", "Combo"],
-    videos: [
-
-    ],
-  },
-  {
     title: "EngSci_Dinner_Dance_2023",
     image: "/images/gallery/EngSci_Dinner_Dance_2023/cjancheta-engscidd-56.jpg",
     year: "2023",
@@ -75,15 +66,6 @@ const folderCardData: FolderCard[] = [
     image: "/images/gallery/Chem_Dance_2024/ChemDD 2024-JY-23.jpg",
     year: "2024",
     band: ["Other"],
-    videos: [
-
-    ],
-  },
-  {
-    title: "EngSci_Nocturne_2024",
-    image: "/images/gallery/EngSci_Nocturne_2024/cja-nocturne-9082.jpg",
-    year: "2024",
-    band: ["Blue"],
     videos: [
 
     ],

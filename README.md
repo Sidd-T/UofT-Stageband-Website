@@ -19,8 +19,8 @@ The gallery is organized by events
 {
   title: string, //must match the folder name that you just created
   image: string, //this is the thumbnail image for the folder, should look like /images/gallery/[title]/[imagename].[ext]
-  year: string, //this should be the year that the event took place, in the T format, like "2T4"
-  band: string, //should be a string of either "Blue", "Gold", "Combo", or "Other"
+  year: string, //this should be the year that the event took place, like "2024"
+  band: string[], //should be a array of strings of any of "Blue", "Gold", "Combo", or "Other"
   videos?: string[], //should be an array of youtube links as strings, this is an optional field
 }
 ```

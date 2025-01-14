@@ -76,7 +76,7 @@ const ImageGallery = ({
         index={selectedIndex}
         on={{ view: ({ index: currentIndex }) => setSelectedIndex(currentIndex) }}
       />
-      <section id="folders" className="pt-16 md:pt-20 lg:pt-28 pb-16">
+      <section id="folders" className="pt-16 md:pt-20 lg:pt-28 pb-8">
         <div className="container">
           <div className="dark:border-white/[.15]">
             <div className="-mx-4 flex flex-wrap items-center">
@@ -127,7 +127,7 @@ const ImageGallery = ({
                               src={`/images/gallery/${title}/${image}`}
                               alt={`Image ${startIndex + index + 1}`}
                               fill
-                              className="cursor-pointer"
+                              className="cursor-pointer object-cover"
                               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
                           </div>
